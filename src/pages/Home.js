@@ -1,10 +1,10 @@
 import React from 'react'
-import Header from '../components/Header.js'
+import Navbar from '../components/Navbar.js'
 
 export default function Home() {
   return (
     <div>
-      <Header></Header>
+      <Navbar></Navbar>
     </div>
   )
 }
