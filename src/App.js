@@ -32,7 +32,7 @@ function App() {
           {zineData && <Mobile></Mobile>}
         </div>
         <div className='home'>
-          {zineData && <Home></Home>}
+          {zineData && <Home zineData={zineData}></Home>}
         </div>
     </div>
   );
