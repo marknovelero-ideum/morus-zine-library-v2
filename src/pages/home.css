@@ -1,11 +1,14 @@
 @media only screen and (min-width: 766px){
     .about-container{
         padding-top: 30px;
+        height: 900px;
+        overflow: hidden;
+        margin-bottom: 60px;
     }
     .para-div-1{
         width: 690px;
         padding: 10px 20px 20px 20px;
-        background-color: rgb(132, 236, 250);;
+        background-color: rgb(132, 236, 250);
         margin-bottom: 30px;
     }
     .paragraph-one{
@@ -15,6 +18,20 @@
         color: black;
         font-weight: 500;
     }
+    .deco-accent{
+        height: 20px;
+        width: 680px;
+        background-color: bisque;
+    }
+    .deco-accent-two{
+        height: 10px;
+        width: 1233px;
+        background-color: rgb(0, 0, 0);
+        rotate: 90deg;
+        margin-left: 0px;
+        z-index: -3;
+        opacity: .5;
+    }
     .pd2-container{
         display: flex;
         justify-content: center;
@@ -22,9 +39,10 @@
     .para-div-2{
         padding: 10px 20px 10px 20px;
         background-color: black;
-        margin-bottom: 20px;
+        margin-bottom: 25px;
         width: 360px;
-        margin-top: -68px;
+        margin-top: -75px;
+        z-index: 2;
     }
     .paragraph-two{
         font-family: 'copy';
@@ -40,11 +58,12 @@
     }
     .para-div-3{
         margin-top: -40px;
-        padding: 20px 10px 20px 20px;
+        padding: 15px 10px 10px 20px;
         background-color: rgb(223, 223, 223);
-        z-index: -1;
+        
+        z-index: 1;
         margin-left: 5%;
-        margin-bottom: 20px;
+        margin-bottom: 60px;
     }
     .paragraph-three{
         font-family: 'copy';
@@ -58,26 +77,48 @@
 @media only screen and (min-width: 1000px){
     .about-container{
         padding-top: 30px;
+        height: 800px;
+        overflow: hidden;
+        margin-bottom: 60px;
     }
     .para-div-1{
-        margin-right: 120px;
-        padding: 10px 20px 10px 20px;
-        background-color: rgb(132, 236, 250);;
+        width: 800px;
+        padding: 10px 40px 20px 100px;
+        background-color: rgb(132, 236, 250);
         margin-bottom: 30px;
     }
     .paragraph-one{
         font-family: 'copy';
-        font-size: 15px;
+        font-size: 16px;
         line-height: 24px;
         color: black;
         font-weight: 500;
     }
-    .para-div-2{
-        margin-left: 100px;
-        margin-right: 60px;
-        padding: 10px 20px 10px 20px;
+    .deco-accent{
+        height: 25px;
+        width: 980px;
+        background-color: bisque;
+    }
+    .deco-accent-two{
+        height: 10px;
+        width: 1233px;
         background-color: rgb(0, 0, 0);
-        margin-bottom: 30px;
+        rotate: 90deg;
+        margin-left: 0px;
+        z-index: -3;
+        opacity: .5;
+    }
+    .pd2-container{
+        display: flex;
+        justify-content: center;
+    }
+    .para-div-2{
+        padding: 10px 20px 10px 20px;
+        background-color: black;
+        margin-bottom: 25px;
+        width: 460px;
+        margin-top: -75px;
+        z-index: 2;
     }
     .paragraph-two{
         font-family: 'copy';
@@ -87,12 +128,18 @@
         color: white;
         font-weight: 500;
     }
+    .pd3-container{
+        display: flex;
+        justify-content: center;
+    }
     .para-div-3{
-        margin-left: 0px;
-        margin-right: 160px;
-        padding: 10px 10px 10px 20px;
+        margin-top: -40px;
+        padding: 15px 10px 10px 20px;
         background-color: rgb(223, 223, 223);
-        margin-bottom: 30px;
+        
+        z-index: 1;
+        margin-left: 5%;
+        margin-bottom: 60px;
     }
     .paragraph-three{
         font-family: 'copy';

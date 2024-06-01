@@ -21,6 +21,7 @@ export default function Home(zineData) {
           the library will continue to reflect the diverse communities of stakeholders concerned with each of these topics. 
           </p>
         </div>
+        <div className='deco-accent'></div>
         <div className='pd2-container'>
           <div className='para-div-2'>
             <p className='paragraph-two'>
@@ -44,6 +45,7 @@ export default function Home(zineData) {
             </p>
           </div>
         </div>
+        <div className='deco-accent-two'></div>
       </div>
     </div>
   )
