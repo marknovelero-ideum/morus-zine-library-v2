@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("./assets/fonts/whitewall.jpg");
+  background-size: cover;
 }
 
 @font-face {
@@ -15,4 +17,9 @@ body {
 @font-face {
   font-family: 'copy';
   src: url('./assets/fonts/K2D-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'stencil';
+  src: url('./assets/fonts/SairaStencilOne-Regular.ttf') format('truetype');
 }

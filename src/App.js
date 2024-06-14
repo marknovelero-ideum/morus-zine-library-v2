@@ -1,4 +1,4 @@
-import './app.css';
+import './App.css';
 import React, { useState, useEffect } from 'react';
 import Mobile from './pages/Mobile';
 import Home from './pages/Home';

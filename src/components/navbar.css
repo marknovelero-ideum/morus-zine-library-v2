@@ -17,10 +17,9 @@
         background-color: transparent;
         color: white;
         padding: 10px 3% 5px 0px;
-        margin-left: 75px;
-        margin-top: 0px;
-        border-bottom: 8px solid rgb(188, 189, 190);
-        margin-bottom: 20px;
+        margin-left: 70px;
+        margin-top: 60px;
+        margin-bottom: 45px;
     }
     .left h1 {
         margin: 0;
@@ -40,34 +39,43 @@
     .nav-link {
         text-decoration: none;
         font-family: 'header';
-        font-size: 14px;
+        font-size: 15px;
         letter-spacing: 3px;
-        font-weight: 600;
-        color: black;
+        font-weight: 500;
+        color: rgb(0, 0, 0);
         margin-bottom: 0;
+        background-color: #fbfdfe;
+        padding-left: 15px;
+        padding-top: 3px;
+        padding-bottom: 1px;
+        padding-right: 5px;
     }
     .nav-link.current{
         text-decoration: none;
         font-family: 'header';
-        font-size: 14px;
+        font-size: 15px;
         letter-spacing: 3px;
-        font-weight: 600;
+        font-weight: 500;
         color: #00b1c9;
         margin-bottom: 0;
+        background-color: black;
+        padding-left: 25px;
     }
     .right ul li p:hover{
         color: #00b1c9;
     }
     li{
-        padding-top: 70px;
+        padding-top: 0px;
     }
     .main-title {
-        font-family: 'header'; 
+        font-family: 'stencil'; 
         color: black;
-        font-size: 80px;
+        font-size: 50px;
+        line-height: 50px;
         font-weight: 800;
         margin-bottom: 0px;
-        letter-spacing: 2.25px;
+        letter-spacing: 1px;
+        padding-top: 0px;
     }
     .sub-title{
         font-family: 'header'; 
