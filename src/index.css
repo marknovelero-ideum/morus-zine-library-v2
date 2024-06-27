@@ -5,8 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-image: url("./assets/fonts/stickerwall2.jpg");
-  background-size: cover;
+  background-image: url("./assets/fonts/linen.jpg");
+  background-size: 160%;
 }
 
 @font-face {
@@ -22,4 +22,19 @@ body {
 @font-face {
   font-family: 'stencil';
   src: url('./assets/fonts/SairaStencilOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'manrope';
+  src: url('./assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+}
+
+
+
+@media only screen and (min-width: 1400px){
+  body{
+    background-image: url("./assets/fonts/post2.png");
+    background-size: cover;
+    background-attachment: fixed;
+  }
 }

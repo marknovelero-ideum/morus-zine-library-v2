@@ -10,17 +10,22 @@
 
 @media only screen and (min-width: 768px){
  
-    .navbar {
+    .top-nav{
+        width: 100vw;
+        display: flex;
+        justify-content: right;
+    }
+    .navbar-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
         color: white;
-        padding: 10px 3% 5px 0px;
-        margin-left: 50px;
-        margin-top: 40px;
+        padding: 10px 3% 0px 0px;
+        margin-top: 30px;
         margin-bottom: 45px;
-        border-bottom: #fbfdfe 3px solid;
+        border-bottom: black 3px solid;
+        width: 90%;
     }
     .left h1 {
         margin: 0;
@@ -70,29 +75,31 @@
     }
     .main-title {
         font-family: 'stencil'; 
-        color: #00b1c9;
-        font-size: 55px;
+        color: #fbfdfe;
+        font-size: 45px;
         line-height: 50px;
         font-weight: 800;
         margin-bottom: 0px;
         letter-spacing: 1px;
         padding-top: 0px;
+        background-color: #000000;
+        padding: 5px 10px 5px 10px;
     }
 }
 
 @media only screen and (min-width: 1000px){
 
-    .navbar {
+    .navbar-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
         color: white;
-        padding: 10px 3% 10px 0px;
-        margin-left: 70px;
-        margin-top: 35px;
+        padding: 10px 3% 0px 0px;
+        margin-top: 25px;
         margin-bottom: 45px;
-        border-bottom: #fbfdfe 3px solid;
+        border-bottom: black 5px solid;
+        width: 88%;
     }
     .left h1 {
         margin: 0;
@@ -104,7 +111,7 @@
         align-items: flex-end;
     }
     .right ul li {
-        margin-left: 12px;
+        margin-left: 20px;
     }
     .right ul li:first-child {
         margin-left: 0;
@@ -142,29 +149,31 @@
     }
     .main-title {
         font-family: 'stencil'; 
-        color: #01bcd5;
-        font-size: 60px;
+        color: #fbfdfe;
+        font-size: 50px;
         line-height: 50px;
         font-weight: 800;
         margin-bottom: 0px;
         letter-spacing: 1px;
         padding-top: 0px;
+        background-color: #000000;
+        padding: 10px 20px 10px 20px;
     }
 }
 
 @media only screen and (min-width: 1400px){
 
-    .navbar {
+    .navbar-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
         color: white;
-        padding: 10px 3% 10px 0px;
-        margin-left: 120px;
-        margin-top: 30px;
+        padding: 10px 3% 0px 0px;
+        margin-top: 25px;
         margin-bottom: 45px;
-        border-bottom: #fbfdfe 5px solid;
+        border-bottom: black 5px solid;
+        width: 90%;
     }
     .left h1 {
         margin: 0;
@@ -176,10 +185,10 @@
         align-items: flex-end;
     }
     .nav-container{
-        padding-top: 15px;
+        padding-top: 20px;
     }
     .right ul li {
-        margin-left: 28px;
+        margin-left: 35px;
     }
     .right ul li:first-child {
         margin-left: 0;
@@ -217,32 +226,40 @@
     }
     .main-title {
         font-family: 'stencil'; 
-        color: #01bcd5;
-        font-size: 70px;
+        color: #fbfdfe;
+        font-size: 65px;
         line-height: 70px;
         font-weight: 800;
         margin-bottom: 0px;
         letter-spacing: 1px;
         padding-top: 0px;
+        background-color: #000000;
+        padding: 10px 20px 10px 20px;
     }
 }
 
 @media only screen and (min-width: 1900px){
-
-    .navbar {
+    .top-nav{
+        margin-bottom: 90px;
+    }
+    .navbar-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
         color: white;
-        padding: 10px 3% 10px 0px;
-        margin-left: 200px;
+        padding: 25px 3% 0px 0px;
         margin-top: 45px;
-        margin-bottom: 45px;
-        border-bottom: #fbfdfe 7px solid;
+        margin-bottom: 0px;
+        border-bottom: black 8px solid;
+        width: 88%;
     }
     .left h1 {
         margin: 0;
+    }
+    .left{
+        background-color: black;
+        padding-bottom: 5px;
     }
     .right ul {
         list-style: none;
@@ -251,7 +268,7 @@
         align-items: flex-end;
     }
     .nav-container{
-        padding-top: 15px;
+        padding-top: 45px;
     }
     .right ul li {
         margin-left: 48px;
@@ -262,27 +279,29 @@
     .nav-link {
         text-decoration: none;
         font-family: 'header';
-        font-size: 20px;
+        font-size: 26px;
         letter-spacing: 3px;
         font-weight: 500;
         color: rgb(0, 0, 0);
         margin-bottom: 0;
-        background-color: #fbfdfe;
-        padding-left: 15px;
+        background-color: #eff3f4;
+        padding-left: 35px;
         padding-top: 3px;
         padding-bottom: 1px;
         padding-right: 5px;
+        cursor: pointer;
     }
     .nav-link.current{
         text-decoration: none;
         font-family: 'header';
-        font-size: 20px;
+        font-size: 26px;
         letter-spacing: 3px;
         font-weight: 500;
         color: #00b1c9;
         margin-bottom: 0;
         background-color: rgb(0, 0, 0);
-        padding-left: 25px;
+        padding-left: 35px;
+        cursor: pointer;
     }
     .right ul li p:hover{
         color: #00b1c9;
@@ -292,12 +311,21 @@
     }
     .main-title {
         font-family: 'stencil'; 
-        color: #01bcd5;
-        font-size: 80px;
+        color: #48eaff;
+        font-size: 100px;
         line-height: 80px;
         font-weight: 800;
         margin-bottom: 0px;
         letter-spacing: 1px;
         padding-top: 0px;
+        background-color: #000000;
+        padding: 20px 25px 0px 25px;
+    }
+    .subtitle{
+        padding: 5px 0px 0px 30px;
+        margin: 0px;
+        font-family: 'header';
+        font-size: 20px;
+        letter-spacing: 3px;
     }
 }

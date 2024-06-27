@@ -1,152 +1,92 @@
 @media only screen and (min-width: 766px){
-    .about-container{
-        padding-top: 30px;
-        height: 900px;
-        overflow: hidden;
-        margin-bottom: 60px;
-    }
-    .para-div-1{
-        width: 690px;
-        padding: 10px 20px 20px 20px;
-        background-color: rgb(132, 236, 250);
-        margin-bottom: 30px;
-    }
-    .paragraph-one{
-        font-family: 'copy';
-        font-size: 15px;
-        line-height: 24px;
-        color: black;
-        font-weight: 500;
-    }
-    .deco-accent{
-        height: 20px;
-        width: 680px;
-        background-color: bisque;
-    }
-    .deco-accent-two{
-        height: 10px;
-        width: 1233px;
-        background-color: rgb(0, 0, 0);
-        rotate: 90deg;
-        margin-left: 0px;
-        z-index: -3;
-        opacity: .5;
-    }
-    .pd2-container{
-        display: flex;
-        justify-content: center;
-    }
-    .para-div-2{
-        padding: 10px 20px 10px 20px;
-        background-color: black;
-        margin-bottom: 25px;
-        width: 360px;
-        margin-top: -75px;
-        z-index: 2;
-    }
-    .paragraph-two{
-        font-family: 'copy';
-        font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 30px;
-        color: white;
-        font-weight: 500;
-    }
-    .pd3-container{
-        display: flex;
-        justify-content: center;
-    }
-    .para-div-3{
-        margin-top: -40px;
-        padding: 15px 10px 10px 20px;
-        background-color: rgb(223, 223, 223);
-        
-        z-index: 1;
-        margin-left: 5%;
-        margin-bottom: 60px;
-    }
-    .paragraph-three{
-        font-family: 'copy';
-        font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 20px;
-        color: black;
-        font-weight: 500;
-    }
+ 
 }
+
 @media only screen and (min-width: 1000px){
-    .about-container{
-        padding-top: 30px;
-        height: 800px;
-        overflow: hidden;
-        margin-bottom: 60px;
-    }
-    .para-div-1{
-        width: 800px;
-        padding: 10px 40px 20px 100px;
-        background-color: rgb(132, 236, 250);
-        margin-bottom: 30px;
-    }
-    .paragraph-one{
-        font-family: 'copy';
-        font-size: 16px;
-        line-height: 24px;
-        color: black;
-        font-weight: 500;
-    }
-    .deco-accent{
-        height: 25px;
-        width: 980px;
-        background-color: bisque;
-    }
-    .deco-accent-two{
-        height: 10px;
-        width: 1233px;
-        background-color: rgb(0, 0, 0);
-        rotate: 90deg;
-        margin-left: 0px;
-        z-index: -3;
-        opacity: .5;
-    }
-    .pd2-container{
+    
+}
+
+@media only screen and (min-width: 1400px){
+
+}
+
+@media only screen and (min-width: 1900px){
+    .about-top{
+        width: 100vw;
+      }
+    .para-1-container{
+        width: 92%;
+        height: auto;
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
-    .para-div-2{
-        padding: 10px 20px 10px 20px;
-        background-color: black;
-        margin-bottom: 25px;
-        width: 460px;
-        margin-top: -75px;
-        z-index: 2;
-    }
-    .paragraph-two{
-        font-family: 'copy';
-        font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 30px;
-        color: white;
-        font-weight: 500;
-    }
-    .pd3-container{
+    .container-label-1{
         display: flex;
-        justify-content: center;
+        align-items: end;
+        margin-right: 100px;
     }
-    .para-div-3{
-        margin-top: -40px;
-        padding: 15px 10px 10px 20px;
-        background-color: rgb(223, 223, 223);
+    .container-label-sub{
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+        height: 80px;
+        position: relative;
+        bottom: 0;
+        width: 470px;
+    }
+    .img-lable-1{
+        height: 110px;
+        position: absolute;
+        left: 230px;
+        bottom: 75px;
+    }
+    .para1-label{
+        position: absolute;
+        bottom: 60px;
+        font-size: 30px;
+        font-family: 'header';
+        color: rgb(0, 0, 0);
+        letter-spacing: 3px;
+        font-weight: 600;
         
-        z-index: 1;
-        margin-left: 5%;
-        margin-bottom: 60px;
     }
-    .paragraph-three{
-        font-family: 'copy';
-        font-size: 15px;
-        line-height: 24px;
-        margin-bottom: 20px;
-        color: black;
-        font-weight: 500;
+    .para-1{
+        width: 100%;
+        border-bottom: 18px black solid;
+        display: flex;
+        justify-content: right;
     }
+    .para-1-text{
+        width: 1000px;
+        color: rgb(255, 255, 255);
+        background-color: black;
+        padding: 2%;
+        font-family: 'manrope';
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 34px;
+        letter-spacing: 1.5px;
+        margin: 0px; 
+    }
+    .img-1-container{
+        width: 90vw;
+        padding-left: 220px;
+        display: flex;
+    }
+    .img-1{
+        height: 500px;
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%) contrast(150%);
+    }
+    .deco-div-1{
+        height: 130px;
+        width: 30%; 
+        border-right: 8px black solid;
+    }
+    .deco-div-2{
+        border-bottom: 8px black solid;
+        width: 300px;
+        height: 250px
+    }
+    
 }
