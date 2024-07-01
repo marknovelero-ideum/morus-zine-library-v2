@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar.js'
 import Morus from '../assets/fonts/morus.png'
-import PointR from '../assets/fonts/pointing.png'
+import PointR from '../assets/fonts/illus-1.png'
 import './home.css'
 
 export default function Home(zineData) {
@@ -15,8 +15,7 @@ export default function Home(zineData) {
           <section className="para-1">
             <div className='container-label-1'>
               <div className='container-label-sub'>
-                <p className='para1-label'>Paragraph 1 -----</p>
-                <img className='img-lable-1' src={PointR}></img>
+                <img className='bike-img' src={PointR}></img>
               </div>
             </div>
             <p className="para-1-text">
@@ -34,8 +33,16 @@ export default function Home(zineData) {
         </container>
         <div className="deco-div-1"></div>
         <div className='img-1-container'>
-              <img className='img-1' src={Morus}></img>
-              <div className='deco-div-2'></div>
+          <p className="para-2-text">
+            While our physical collection currently tops out at about 100 different zines (and will continue to grow) this 
+            digital repository provides a selection of those zines. The MoRUS Zine Library is made up largely of donations. 
+            If you see your work featured in the library and wish to be more clearly credited, removed from the library, or 
+            the documentation of the zine changed in any way please don't hesitate to reach out to the archive coordinator. 
+            Other zines can be made available by reaching out to the archive coordinator at archives@morusnyc.org or 
+            info@morusnyc.org.    
+          </p>
+          <div className='deco-div-2'></div>
+          <img className='img-1' src={Morus}></img>
         </div>
       </article>
      
