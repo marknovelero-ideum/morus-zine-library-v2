@@ -26,7 +26,7 @@ body {
 
 @font-face {
   font-family: 'manrope';
-  src: url('./assets/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+  src: url('./assets/fonts/MavenPro.ttf') format('truetype');
 }
 
 
@@ -34,7 +34,7 @@ body {
 @media only screen and (min-width: 1900px){
   body{
     background-image: url("./assets/fonts/post2.png");
-    background-size: 2400px;
+    background-size: 2650px;
     background-attachment: fixed;
   }
 }

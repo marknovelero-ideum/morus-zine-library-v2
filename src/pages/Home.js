@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar.js'
 import Morus from '../assets/fonts/morus.png'
-import PointR from '../assets/fonts/illus-1.png'
+import Comic1 from '../assets/fonts/illus-1.png'
+import Runner from '../assets/fonts/runner.png'
 import './home.css'
 
 export default function Home(zineData) {
@@ -11,11 +12,14 @@ export default function Home(zineData) {
     <main>
       <Navbar current={current} setCurrent={setCurrent}></Navbar>
       <article className="about-top">
-        <container className="para-1-container">
+        <container className="sect1-container">
           <section className="para-1">
-            <div className='container-label-1'>
+            <div className='container-img-1'>
               <div className='container-label-sub'>
-                <img className='bike-img' src={PointR}></img>
+                <div className='les-div'>
+                  <h2 className='lower-east'>LOWER <br></br> EAST SIDE</h2>
+                </div>
+                <img className='homelessness-img' src={Comic1}></img>
               </div>
             </div>
             <p className="para-1-text">
@@ -31,8 +35,13 @@ export default function Home(zineData) {
             </p>
           </section>
         </container>
-        <div className="deco-div-1"></div>
-        <div className='img-1-container'>
+        <div className='container-of-decodivs'>
+          <div className="deco-div-1">
+            <h2 className='activism'>ACTIVISM!</h2>
+          </div>
+          <div className="deco-div-3"></div>
+        </div>
+        <div className='sect2-container'>
           <p className="para-2-text">
             While our physical collection currently tops out at about 100 different zines (and will continue to grow) this 
             digital repository provides a selection of those zines. The MoRUS Zine Library is made up largely of donations. 
@@ -41,9 +50,15 @@ export default function Home(zineData) {
             Other zines can be made available by reaching out to the archive coordinator at archives@morusnyc.org or 
             info@morusnyc.org.    
           </p>
-          <div className='deco-div-2'></div>
-          <img className='img-1' src={Morus}></img>
+          <div className='deco-div-2'>
+            <img className='runner-img' src={Runner}></img>
+          </div>
+          <a className='history-link' href="http://www.morusnyc.org/" target='_blank' rel="noreferrer">
+            <img className='history-museum' alt="MORUS museum" src={Morus}></img>
+            <p className='address'>NEIGHBORHOOD <br></br> MUSEUM</p>
+          </a>
         </div>
+        <div className="deco-div-4"/>
       </article>
      
     </main>

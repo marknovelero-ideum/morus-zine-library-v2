@@ -240,7 +240,7 @@
 
 @media only screen and (min-width: 1900px){
     .top-nav{
-        margin-bottom: 145px;
+        margin-bottom: 7%;
     }
     .navbar-container {
         display: flex;
@@ -251,7 +251,7 @@
         padding: 25px 3% 0px 0px;
         margin-top: 10px;
         margin-bottom: 0px;
-        border-bottom: black 10px solid;
+        border-bottom: black 1.25vw solid;
         width: 89%;
     }
     .left h1 {
@@ -297,14 +297,14 @@
         font-size: 26px;
         letter-spacing: 3px;
         font-weight: 500;
-        color: #00b1c9;
+        color:  #48eaff;
         margin-bottom: 0;
         background-color: rgb(0, 0, 0);
         padding-left: 35px;
         cursor: pointer;
     }
     .right ul li p:hover{
-        color: #00b1c9;
+        color: black;
     }
     li{
         padding-top: 0px;

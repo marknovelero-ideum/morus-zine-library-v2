@@ -14,30 +14,46 @@
     .about-top{
         width: 100vw;
       }
-    .para-1-container{
+    .sect1-container{
         width: 94%;
         height: auto;
         display: flex;
         justify-content: left;
     }
-    .container-label-1{
+    .container-img-1{
         display: flex;
         align-items: end;
-        margin-right: 8.5vw;
+        margin-right: 8.10vw;
     }
     .container-label-sub{
-        display: flex;
+        display: block;
         align-items: center;
         padding-left: 0px;
         position: relative;
         bottom: 0;
         width: 28vw;
     }
-    .bike-img{
-        height: 13.5vw;
-        border-top: 5px solid black;
-        border-left: 5px solid black;
-        border-right: 5px solid black;
+    .les-div{
+        margin-right: -26.1%;
+    }
+    .lower-east{
+        font-family: 'manrope';
+        font-size: 5.5vw;
+        line-height: 4.5vw;
+        margin: 0;
+        font-weight: 900;
+        margin-left: 0%;
+        text-align: right;
+        color: rgb(184, 184, 184);
+        letter-spacing: -.25vw;
+    }
+    .homelessness-img{
+        height: 13.66vw;
+        border-top: .4vw solid black;
+        border-left: .4vw solid black;
+        border-right: .4vw solid black;
+        border-bottom: .4vw solid black;
+        margin: 0;
     }
     .para-1{
         width: 100%;
@@ -52,42 +68,112 @@
         padding: 2%;
         font-family: 'manrope';
         font-size: 1.08vw;
-        font-weight: 600;
+        font-weight: 700;
         line-height: 1.52vw;
-        letter-spacing: 1.5px;
+        letter-spacing: 1.25px;
         margin: 0px; 
     }
     .para-2-text{
-        width: 55%;
+        width: 27%;
         color: rgb(255, 255, 255);
         background-color: black;
-        padding: 30px 30px 30px 30px;
+        background-size: cover;
+        padding: 2% 3% 2% 2%;
         font-family: 'manrope';
         font-size: 1.08vw;
-        font-weight: 600;
-        line-height: 34px;
-        letter-spacing: 1.5px;
+        font-weight: 700;
+        line-height: 1.52vw;
+        letter-spacing: 1.25px;
         margin: 0px; 
+        
     }
-    .img-1-container{
-        padding-left: 220px;
+    .sect2-container{
+        padding-left: 8.75%;
         display: flex;
-        margin-bottom: 320px;
     }
-    .img-1{
-        height: 20vw;
+    .history-link{
+        border-bottom: black 1vw solid;
+        display: block;
+        align-items: start;
+        justify-content: center;
+        width: 28.5vw;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    .history-museum{
+        height: 16vw;
         -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
         filter: grayscale(100%) contrast(150%);
+        margin-top: -3.10vw;
+        border-bottom: .45vw black solid;
+        border-top: .45vw black solid;
     }
     .deco-div-1{
-        height: 220px;
-        width: 30%; 
-        border-right: 10px black solid;
+        height: 15vw;
+        width: 26.5%; 
+        border-right: 1vw black solid;
+        display: flex;
+        align-items: end;
+        justify-content: right;
+        margin-left: 0;
+        padding-left: 10.5%;
+        
+        background-size: cover;
+    }
+    .activism{
+        font-family: 'manrope';
+        font-size: 5vw;
+        line-height: 4.5vw;
+        margin: 0;
+        font-weight: 900;
+        margin-left: 0%;
+        text-align: right;
+        color: rgb(184, 184, 184);
+        letter-spacing: -.25vw;
+        background-color: black;
+        padding: .2vw 2.7vw .3vw 12vw;
     }
     .deco-div-2{
-        border-bottom: 10px black solid;
-        width: 350px;
-        height: 250px
+        border-bottom: 70px black solid;
+        width: 27%;
+        height: auto; 
+        display: flex;
+        justify-content: center;
     }
-    
+    .container-of-decodivs{
+        display: flex;
+    }
+    .deco-div-3{
+        height: 12vw;
+        width: .5%; 
+        border-right: .8vw black solid;
+        border-left: .8vw black solid;
+        margin-left: 38%;
+    }
+    .runner-img{
+        height: 16vw;
+        padding-top: 8.25vw;
+    }
+    .address{
+        display: flex;
+        justify-content: center;
+        color: black;
+        font-size: 3.15vw;
+        line-height: 3vw;
+        font-family: 'manrope';
+        font-weight: 1000;
+        text-align: center;
+        letter-spacing: -.15vw;
+        cursor: pointer;
+    }
+    .address:hover{
+        color: rgb(93, 93, 93);
+    }
+    .deco-div-4{
+        width: 100%;
+        height: .65vw; 
+        display: block;
+        margin-left: 8.8%;
+        margin-bottom: 10%;
+    }
 }
