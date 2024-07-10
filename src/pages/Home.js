@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar.js'
 import Morus from '../assets/fonts/morus.png'
 import Comic1 from '../assets/fonts/illus-1.png'
 import Runner from '../assets/fonts/runner.png'
+import Collections from '../assets/fonts/morus-records.jpg'
 import './home.css'
 
 export default function Home(zineData) {
@@ -59,6 +60,23 @@ export default function Home(zineData) {
           </a>
         </div>
         <div className="deco-div-4"/>
+        <div className="sect3-container">
+          <div className="deco-div-5">
+            <h2 className='grassroots'><span className='grass'>GRASS</span><span className='roots'>ROOTS</span></h2>
+          </div>
+          <div className="deco-div-6"></div>
+        </div>
+        <div className='sect4-container'>
+            <img className='collections' src={Collections}></img>
+            <p className='para-3-text'>
+            The Zine Library is organized according to subject in our database which uses the xZineCorex metadata schema, 
+            explained by Milo of QZAP in an easy to read and very helpful zine here, and the subject terms were derived 
+            largely from the Anchor Archive Zine Subject Thesaurus. The goal of our adherence to these zine specific 
+            standards is to contribute to the ongoing project of Zine Union Catalog to normalize metadata in libraries 
+            around the world. Long term we hope to participate in the ongoing project of creating a worldwide open source 
+            catalog of zines which can connect any library that holds zines. More details on that project at here at zinecat.org.
+            </p>
+        </div>
       </article>
      
     </main>
