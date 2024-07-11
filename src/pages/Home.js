@@ -4,6 +4,8 @@ import Morus from '../assets/fonts/morus.png'
 import Comic1 from '../assets/fonts/illus-1.png'
 import Runner from '../assets/fonts/runner.png'
 import Collections from '../assets/fonts/morus-records.jpg'
+import Flag from '../assets/fonts/flag.png'
+import Logo from '../assets/fonts/morus-en.jpg'
 import './home.css'
 
 export default function Home(zineData) {
@@ -23,17 +25,20 @@ export default function Home(zineData) {
                 <img className='homelessness-img' src={Comic1}></img>
               </div>
             </div>
-            <p className="para-1-text">
-            The Museum of Reclaimed Urban Space Zine Library was created to support the museum’s mission of preserving and
-             promoting the history of grassroots activism in the Lower East Side of Manhattan. This library elevates and 
-             makes accessible the oftentimes disenfranchised and marginalized voices represented through these typically 
-             free publications. First organized in 2021 by the Archive Committee at MoRUS, the MoRUS Zine Library was made 
-             up of donations from visitors and former museum volunteers. Moving forward the scope of our zine collection 
-             policy will be focused on subjects and genres ranging from DIY, history, and art that deal with topics like 
-             housing, environmentalism, and activism, especially those emanating from New York City. Despite these 
-             collection restrictions, the library will continue to reflect the diverse communities of stakeholders concerned
-             with each of these topics. 
-            </p>
+            <div className='para1-subdiv'>
+              <img className='flag-img' src={Flag}></img>
+              <p className="para-1-text">
+                The Museum of Reclaimed Urban Space Zine Library was created to support the museum’s mission of preserving and
+                promoting the history of grassroots activism in the Lower East Side of Manhattan. This library elevates and 
+                makes accessible the oftentimes disenfranchised and marginalized voices represented through these typically 
+                free publications. First organized in 2021 by the Archive Committee at MoRUS, the MoRUS Zine Library was made 
+                up of donations from visitors and former museum volunteers. Moving forward the scope of our zine collection 
+                policy will be focused on subjects and genres ranging from DIY, history, and art that deal with topics like 
+                housing, environmentalism, and activism, especially those emanating from New York City. Despite these 
+                collection restrictions, the library will continue to reflect the diverse communities of stakeholders concerned
+                with each of these topics. 
+              </p>
+            </div>
           </section>
         </container>
         <div className='container-of-decodivs'>
@@ -67,7 +72,10 @@ export default function Home(zineData) {
           <div className="deco-div-6"></div>
         </div>
         <div className='sect4-container'>
-            <img className='collections' src={Collections}></img>
+            <div className='collections-div'>
+              <img className='collections' src={Collections}></img>
+               <h2 className='community'>ZINES ZINES ZINES ZINES</h2>
+            </div>
             <p className='para-3-text'>
             The Zine Library is organized according to subject in our database which uses the xZineCorex metadata schema, 
             explained by Milo of QZAP in an easy to read and very helpful zine here, and the subject terms were derived 
@@ -77,8 +85,11 @@ export default function Home(zineData) {
             catalog of zines which can connect any library that holds zines. More details on that project at here at zinecat.org.
             </p>
         </div>
+        <div className='end'>
+          <div className='tools-div'></div>
+          <h2 className='end-text'>THE END.</h2>
+        </div>
       </article>
-     
     </main>
   )
 }

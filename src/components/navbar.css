@@ -238,9 +238,9 @@
     }
 }
 
-@media only screen and (min-width: 1900px){
+@media only screen and (min-width: 1890px){
     .top-nav{
-        margin-bottom: 7%;
+        margin-bottom: 3%;
     }
     .navbar-container {
         display: flex;
@@ -248,10 +248,10 @@
         align-items: center;
         background-color: transparent;
         color: white;
-        padding: 1.5vw 3% 0px 0px;
+        padding: 2vw 3% 0px 0px;
         margin-top: 0%;
         margin-bottom: 0px;
-        border-bottom: black 1.75vw solid;
+        border-bottom: black 1.05vw solid;
         width: 88%;
     }
     .left h1 {
@@ -312,7 +312,7 @@
     .main-title {
         font-family: 'stencil'; 
         color: #48eaff;
-        font-size: 5vw;
+        font-size: 4.25vw;
         line-height: 4.25vw;
         font-weight: 800;
         margin-bottom: 0px;
