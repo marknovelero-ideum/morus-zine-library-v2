@@ -56,20 +56,7 @@
         padding-bottom: 1px;
         padding-right: 5px;
     }
-    .nav-link.current{
-        text-decoration: none;
-        font-family: 'header';
-        font-size: 15px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        color: #00b1c9;
-        margin-bottom: 0;
-        background-color: black;
-        padding-left: 25px;
-    }
-    .right ul li p:hover{
-        color: #00b1c9;
-    }
+ 
     li{
         padding-top: 0px;
     }
@@ -89,94 +76,33 @@
 
 @media only screen and (min-width: 1000px){
 
-    .navbar-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: transparent;
-        color: white;
-        padding: 10px 3% 0px 0px;
-        margin-top: 25px;
-        margin-bottom: 45px;
-        border-bottom: black 5px solid;
-        width: 88%;
-    }
-    .left h1 {
-        margin: 0;
-    }
-    .right ul {
-        list-style: none;
-        margin: 0;
-        display: flex;
-        align-items: flex-end;
-    }
-    .right ul li {
-        margin-left: 20px;
-    }
-    .right ul li:first-child {
-        margin-left: 0;
-    }
-    .nav-link {
-        text-decoration: none;
-        font-family: 'header';
-        font-size: 15px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-        margin-bottom: 0;
-        background-color: #fbfdfe;
-        padding-left: 15px;
-        padding-top: 3px;
-        padding-bottom: 1px;
-        padding-right: 5px;
-    }
-    .nav-link.current{
-        text-decoration: none;
-        font-family: 'header';
-        font-size: 15px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        color: #00b1c9;
-        margin-bottom: 0;
-        background-color: black;
-        padding-left: 25px;
-    }
-    .right ul li p:hover{
-        color: #00b1c9;
-    }
-    li{
-        padding-top: 0px;
-    }
-    .main-title {
-        font-family: 'stencil'; 
-        color: #fbfdfe;
-        font-size: 50px;
-        line-height: 50px;
-        font-weight: 800;
-        margin-bottom: 0px;
-        letter-spacing: 1px;
-        padding-top: 0px;
-        background-color: #000000;
-        padding: 10px 20px 10px 20px;
-    }
+  
 }
 
 @media only screen and (min-width: 1400px){
-
+    .top-nav{
+        width: 100vw;
+        display: flex;
+        justify-content: right;
+    }
     .navbar-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         background-color: transparent;
         color: white;
-        padding: 10px 3% 0px 0px;
-        margin-top: 25px;
-        margin-bottom: 45px;
-        border-bottom: black 5px solid;
+        padding: 1vw 3vw 0px 0px;
+        margin-top: 30px;
+        margin-bottom: 4.5%;
+        border-bottom: black .4vw solid;
         width: 90%;
     }
     .left h1 {
         margin: 0;
+    }
+    .left{
+        background-color: black;
+        padding-bottom: .5vw;
     }
     .right ul {
         list-style: none;
@@ -185,10 +111,10 @@
         align-items: flex-end;
     }
     .nav-container{
-        padding-top: 20px;
+        padding-top: 1.5vw;
     }
     .right ul li {
-        margin-left: 35px;
+        margin-left: 2vw;
     }
     .right ul li:first-child {
         margin-left: 0;
@@ -196,51 +122,62 @@
     .nav-link {
         text-decoration: none;
         font-family: 'header';
-        font-size: 18px;
-        letter-spacing: 3px;
+        font-size: 1.4vw;
+        letter-spacing: .25vw;
         font-weight: 500;
         color: rgb(0, 0, 0);
         margin-bottom: 0;
-        background-color: #fbfdfe;
-        padding-left: 15px;
-        padding-top: 3px;
-        padding-bottom: 1px;
-        padding-right: 5px;
+        padding-top: .3vw;
+        padding-bottom: .3vw;
+        padding-right: .2vw;
+        cursor: pointer;
+        background-color: transparent;
+        transition: all .75s;
     }
     .nav-link.current{
         text-decoration: none;
         font-family: 'header';
-        font-size: 18px;
-        letter-spacing: 3px;
+        font-size: 1.4vw;
+        letter-spacing: .25vw;
         font-weight: 500;
-        color: #00b1c9;
+        color:  rgb(0, 0, 0);
         margin-bottom: 0;
-        background-color: black;
-        padding-left: 25px;
+        cursor: pointer;
+        padding: .0vw .0vw .1vw .0vw;
+        transition: all .75s;
+        border-bottom: .2vw #48eaff solid;
     }
-    .right ul li p:hover{
-        color: #00b1c9;
+    .nav-link:hover{
+        letter-spacing: .35vw;
     }
     li{
         padding-top: 0px;
     }
     .main-title {
         font-family: 'stencil'; 
-        color: #fbfdfe;
-        font-size: 65px;
-        line-height: 70px;
-        font-weight: 800;
+        color: #48eaff;
+        font-size: 5.25vw;
+        line-height: 4.25vw;
+        font-weight: 500;
         margin-bottom: 0px;
-        letter-spacing: 1px;
+        letter-spacing: .3vw;
         padding-top: 0px;
         background-color: #000000;
-        padding: 10px 20px 10px 20px;
+        padding: .75vw 1.85vw 0vw 1.85vw;
+    }
+    .subtitle{
+        padding: 0px 0px 0px .98vw;
+        margin: 0px;
+        font-family: 'header';
+        font-size: 1.25vw;
+        letter-spacing: .5vw;
+        margin-left: 1.15vw;
     }
 }
 
 @media only screen and (min-width: 1890px){
     .top-nav{
-        margin-bottom: 3%;
+        margin-bottom: 4%;
     }
     .navbar-container {
         display: flex;
@@ -251,8 +188,8 @@
         padding: 2vw 3% 0px 0px;
         margin-top: 0%;
         margin-bottom: 0px;
-        border-bottom: black 1.05vw solid;
-        width: 88%;
+        border-bottom: black .5vw solid;
+        width: 90%;
     }
     .left h1 {
         margin: 0;
@@ -268,10 +205,10 @@
         align-items: flex-end;
     }
     .nav-container{
-        padding-top: 45px;
+        padding-top: 1.5vw;
     }
     .right ul li {
-        margin-left: 48px;
+        margin-left: 2vw;
     }
     .right ul li:first-child {
         margin-left: 0;
@@ -279,32 +216,29 @@
     .nav-link {
         text-decoration: none;
         font-family: 'header';
-        font-size: 26px;
-        letter-spacing: 3px;
+        font-size: 1.2vw;
+        letter-spacing: .2vw;
         font-weight: 500;
         color: rgb(0, 0, 0);
         margin-bottom: 0;
-        background-color: #eff3f4;
-        padding-left: 35px;
-        padding-top: 3px;
-        padding-bottom: 1px;
-        padding-right: 5px;
+        background-color: #e0e0e0;
+        padding-left: 4vw;
+        padding-top: .3vw;
+        padding-bottom: .3vw;
+        padding-right: .2vw;
         cursor: pointer;
     }
     .nav-link.current{
         text-decoration: none;
         font-family: 'header';
-        font-size: 26px;
-        letter-spacing: 3px;
+        font-size: 1.2vw;
+        letter-spacing: .2vw;
         font-weight: 500;
         color:  #48eaff;
         margin-bottom: 0;
         background-color: rgb(0, 0, 0);
-        padding-left: 35px;
+        padding-left: 12vw;
         cursor: pointer;
-    }
-    .right ul li p:hover{
-        color: black;
     }
     li{
         padding-top: 0px;
@@ -316,7 +250,7 @@
         line-height: 4.25vw;
         font-weight: 800;
         margin-bottom: 0px;
-        letter-spacing: .2px;
+        letter-spacing: .05vw;
         padding-top: 0px;
         background-color: #000000;
         padding: .75vw 1.85vw 0vw 1.85vw;
@@ -326,7 +260,7 @@
         margin: 0px;
         font-family: 'header';
         font-size: 1.25vw;
-        letter-spacing: 3px;
+        letter-spacing: .5vw;
         margin-left: 1.15vw;
     }
 }

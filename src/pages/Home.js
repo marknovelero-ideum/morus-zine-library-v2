@@ -1,19 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Navbar from '../components/Navbar.js'
 import Morus from '../assets/fonts/morus.png'
-import Comic1 from '../assets/fonts/illus-1.png'
+import Comic1 from '../assets/fonts/united.jpg'
 import Runner from '../assets/fonts/runner.png'
 import Collections from '../assets/fonts/morus-records.jpg'
 import Flag from '../assets/fonts/flag.png'
-import Logo from '../assets/fonts/morus-en.jpg'
-import './home.css'
+import Point from '../assets/fonts/right.svg'
+import './about.css'
+import {motion} from "framer-motion"
 
-export default function Home(zineData) {
-  const [current, setCurrent] = useState('about')
+export default function Home( {toAbout, toCollection, zineData, current, setCurrent}) {
+  
 
   return (
     <main>
-      <Navbar current={current} setCurrent={setCurrent}></Navbar>
+      <Navbar toAbout={toAbout} toCollection={toCollection} current={current} setCurrent={setCurrent}></Navbar>
+  
+      {/* start of about code */}
       <article className="about-top">
         <container className="sect1-container">
           <section className="para-1">
@@ -22,7 +25,8 @@ export default function Home(zineData) {
                 <div className='les-div'>
                   <h2 className='lower-east'>LOWER <br></br> EAST SIDE</h2>
                 </div>
-                <img className='homelessness-img' src={Comic1}></img>
+                <img alt='Comic strip by Seth Tobocomann' className='united-img' src={Comic1}></img>
+                <p className='attribution'>Art by Seth Tobachmann</p>
               </div>
             </div>
             <div className='para1-subdiv'>
@@ -74,7 +78,7 @@ export default function Home(zineData) {
         <div className='sect4-container'>
             <div className='collections-div'>
               <img className='collections' src={Collections}></img>
-               <h2 className='community'>ZINES ZINES ZINES ZINES</h2>
+               <h2 className='community'>READ CREATE & DONATE</h2>
             </div>
             <p className='para-3-text'>
             The Zine Library is organized according to subject in our database which uses the xZineCorex metadata schema, 
@@ -87,9 +91,11 @@ export default function Home(zineData) {
         </div>
         <div className='end'>
           <div className='tools-div'></div>
-          <h2 className='end-text'>THE END.</h2>
+          <h2 className='end-text'>ZINES</h2>
+          <img className='point' src={Point}></img>
         </div>
       </article>
+      
     </main>
   )
 }

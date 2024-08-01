@@ -29,12 +29,23 @@ body {
   src: url('./assets/fonts/MavenPro.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'catalog';
+  src: url('./assets/fonts/typerighter_old.ttf') format('truetype');
+}
 
+@media only screen and (min-width: 1000px){
+  body{
+    background-image: url("./assets/fonts/winlight.jpg");
+    background-size: 100vw;
+    background-attachment: fixed;
+  }
+}
 
 @media only screen and (min-width: 1900px){
   body{
     background-image: url("./assets/fonts/linen.jpg");
-    background-size: 90vw;
+    background-size: 0vw;
     background-attachment: fixed;
   }
 }
