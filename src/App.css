@@ -2,6 +2,51 @@
     display: none;
 }
 
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.98);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+    transition: opacity 1s ease, visibility 1s ease;
+}
+.opening-frame{
+    height: 90%;
+    width: 90%;
+    display: relative;
+    z-index: 6;
+    filter: contrast(120%);
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: .5vw;
+    padding-right: .5vw;
+    padding-top: .25vw;
+    background-color: transparent;
+}
+.opening-title{
+    font-family: 'Stencil';
+    font-size: 5vw;
+    line-height: 5vw;
+    letter-spacing: .3vw;
+    color: aqua;
+    margin-bottom: 0;
+}
+.sub{
+    font-family: 'header';
+    margin: 0;
+    letter-spacing: .2vw;
+    font-size: 1.25vw;
+    color: white;
+    padding-left: 1%;
+}
+
 @media only screen and (min-width: 480px) {
     
 }

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import Mobile from './pages/Mobile';
 import Home from './pages/Home';
 import Collection from './pages/Collection'
+import { AnimatePresence, motion } from 'framer-motion';
 import { Routes, Route, useNavigate } from "react-router-dom";
 
 
@@ -53,6 +54,21 @@ function App() {
 
   return (
     <div className="App">
+      <AnimatePresence>
+        {!zineData && 
+          <motion.div
+            transition={{duration: 1.5, delay: .55}}
+            exit={{y: -1200}} 
+            className='overlay'>
+              <div className="opening-frame">
+                <div>
+                  <h1 className='opening-title'>MoRUS</h1>
+                  <p className='sub'>Zine Library</p>
+                </div>
+              </div>
+          </motion.div>
+        }
+      </AnimatePresence>  
         {zineData && 
           <Routes>
             <Route index element={<Home toAbout={toAbout} toCollection={toCollection} zineData={zineData} current={current} setCurrent={setCurrent}/>} />

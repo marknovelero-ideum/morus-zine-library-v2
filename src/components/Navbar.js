@@ -8,6 +8,9 @@ export default function Navbar( { toCollection, toAbout, current, setCurrent} ) 
   
   return (
     <motion.nav 
+      initial={{opacity:0}}
+      animate={{opacity: 1}}
+      transition={{delay: .1, duration: 1}}
       className="top-nav">
       <div className="navbar-container">
         <div className="left">

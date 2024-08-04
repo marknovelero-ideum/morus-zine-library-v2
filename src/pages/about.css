@@ -181,9 +181,7 @@
         letter-spacing: -.15vw;
         cursor: pointer;
     }
-    .address:hover{
-        color: rgb(93, 93, 93);
-    }
+ 
     .deco-div-4{
         width: auto;
         height: .95vw; 
@@ -344,7 +342,7 @@
     .lower-east{
         font-family: 'manrope';
         font-size: 5.65vw;
-        line-height: 4.15vw;
+        line-height: 4.25vw;
         margin: 0;
         font-weight: 900;
         margin-left: 0%;
@@ -485,9 +483,10 @@
         text-align: center;
         letter-spacing: -.15vw;
         cursor: pointer;
+        transition: all .75s;
     }
     .address:hover{
-        color: rgb(93, 93, 93);
+        letter-spacing: .1vw;
     }
     .deco-div-4{
         width: auto;
@@ -600,21 +599,27 @@
     }
     .end-text{
         font-family: 'manrope';
-        font-size: 8.42vw;
+        font-size: 8.72vw;
         margin: 0;
         font-weight: 900;
         color: black;
         margin-right: 7%;
         letter-spacing: -.2vw;
-        bottom: .47vw;
+        bottom: .21vw;
         position: absolute;
-        right: 7.8vw;
+        right: 7.6vw;
+        cursor: pointer;
+        transition: all .75s;
+    }
+    .end-text:hover{
+        letter-spacing: .2vw;
     }
     .point{
         height: 5.5vw;
         position: absolute;
         right: 7.25vw; 
-        bottom: 2.5vw
+        bottom: 2.5vw;
+        cursor: pointer;
     }
 }
 
