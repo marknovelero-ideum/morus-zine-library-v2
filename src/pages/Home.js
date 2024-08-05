@@ -29,7 +29,7 @@ export default function Home( {toAbout, toCollection,current, setCurrent}) {
 
   return (
     <main>
-      <Navbar toAbout={toAbout} toCollection={toCollection} current={current} setCurrent={setCurrent}></Navbar>
+      
   
       {/* start of about code */}
       <motion.article 

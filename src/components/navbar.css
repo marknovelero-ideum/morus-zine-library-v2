@@ -10,68 +10,7 @@
 
 @media only screen and (min-width: 768px){
  
-    .top-nav{
-        width: 100vw;
-        display: flex;
-        justify-content: right;
-    }
-    .navbar-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: transparent;
-        color: white;
-        padding: 10px 3% 0px 0px;
-        margin-top: 30px;
-        margin-bottom: 45px;
-        border-bottom: black 3px solid;
-        width: 90%;
-    }
-    .left h1 {
-        margin: 0;
-    }
-    .right ul {
-        list-style: none;
-        margin: 0;
-        display: flex;
-        align-items: flex-end;
-    }
-    .right ul li {
-        margin-left: 12px;
-    }
-    .right ul li:first-child {
-        margin-left: 0;
-    }
-    .nav-link {
-        text-decoration: none;
-        font-family: 'header';
-        font-size: 15px;
-        letter-spacing: 3px;
-        font-weight: 500;
-        color: rgb(0, 0, 0);
-        margin-bottom: 0;
-        background-color: #fbfdfe;
-        padding-left: 15px;
-        padding-top: 3px;
-        padding-bottom: 1px;
-        padding-right: 5px;
-    }
- 
-    li{
-        padding-top: 0px;
-    }
-    .main-title {
-        font-family: 'stencil'; 
-        color: #fbfdfe;
-        font-size: 45px;
-        line-height: 50px;
-        font-weight: 800;
-        margin-bottom: 0px;
-        letter-spacing: 1px;
-        padding-top: 0px;
-        background-color: #000000;
-        padding: 5px 10px 5px 10px;
-    }
+  
 }
 
 @media only screen and (min-width: 1000px){
@@ -140,12 +79,11 @@
         font-size: 1.4vw;
         letter-spacing: .25vw;
         font-weight: 500;
-        color:  rgb(0, 0, 0);
+        color:  rgb(255, 255, 255);
         margin-bottom: 0;
         cursor: pointer;
-        padding: .0vw .0vw .0vw .0vw;
+        padding: .0vw .0vw .2vw .0vw;
         transition: all .75s;
-        border-bottom: .2vw solid white;
     }
     .nav-link:hover{
         letter-spacing: .4vw;

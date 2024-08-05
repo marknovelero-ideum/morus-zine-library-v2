@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Mobile from './pages/Mobile';
+import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Collection from './pages/Collection'
 import { AnimatePresence, motion } from 'framer-motion';
@@ -35,7 +36,7 @@ function App() {
 
     const fetchData = async () => {
       try {
-        const response = await fetch('https://script.google.com/macros/s/AKfycbwtGnqrpludp6jR01qlD539CMQW-GozsN6IHGNUe-aAq8Ld8AFTzExY2pBnIbc4hVus/exec');
+        const response = await fetch(process.env.REACT_APP_API_ENDPOINT);
         if (!response.ok) {
           throw new Error('Failed to fetch data');
         }
@@ -54,10 +55,11 @@ function App() {
 
   return (
     <div className="App">
+      <Navbar toAbout={toAbout} toCollection={toCollection} zineData={zineData} current={current} setCurrent={setCurrent}></Navbar>
       <AnimatePresence>
         {!zineData && 
           <motion.div
-            transition={{duration: 1.5, delay: .55}}
+            transition={{duration: 1.5, delay: .15}}
             exit={{y: -1200}} 
             className='overlay'>
               <div className="opening-frame">

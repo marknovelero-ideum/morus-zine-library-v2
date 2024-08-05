@@ -28,7 +28,7 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
 
   return (
     <div className='top-div'>
-        <Navbar toAbout={toAbout} toCollection={toCollection} current={current} setCurrent={setCurrent}></Navbar>
+        
         <motion.div
             initial={{opacity: 0}}
             animate={{opacity: 1}}
