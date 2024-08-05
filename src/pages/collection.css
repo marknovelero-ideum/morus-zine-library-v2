@@ -111,16 +111,16 @@
         transition: opacity 1s ease, visibility 1s ease;
       }
       .overlay-frame{
-        height: 85%;
+        height: 80%;
         width: 80%;
         border: .25vw gray solid;
         display: relative;
         z-index: 6;
-        background-image: url('../assets/fonts/card.png');
+        background-color: aliceblue;
         filter: contrast(120%);
         background-size: 100%;
-        padding-left: .5vw;
-        padding-right: .5vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
         padding-top: .25vw;
       }
       .col-data-div{
@@ -142,15 +142,17 @@
       .zine-title{ 
         font-family: 'catalog';
         font-size: 1.75vw;
-        width: 100%;
+        width: 95%;
         text-align: center;
         letter-spacing: .08vw;
         font-weight: 800;
         color: black;
         text-decoration: underline;
-        margin-bottom: 3%;
+        margin-bottom: 4%;
         margin-top: 3%;
-        padding-right: 5%;
+        padding-right: 0%;
+        padding-left: 2%;
+        
       }
       .metadata{
         font-family: "catalog";
