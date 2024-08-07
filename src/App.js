@@ -55,7 +55,9 @@ function App() {
 
   return (
     <div className="App">
+      {zineData &&
       <Navbar toAbout={toAbout} toCollection={toCollection} zineData={zineData} current={current} setCurrent={setCurrent}></Navbar>
+      }
       <AnimatePresence>
         {!zineData && 
           <motion.div
