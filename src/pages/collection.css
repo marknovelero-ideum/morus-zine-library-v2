@@ -13,45 +13,47 @@
         padding-top: 5vw;
         margin-left: 2%;
       }
-      .zine-item {
+    .zine-item {
         overflow: hidden;
         position: relative;
         cursor: pointer;
-      }
-      
-      .zine-item img {
+    } 
+    .zine-item img {
         width: 18vw;
         height: 26vw;
         object-fit: fill; /* Ensures the image covers the area without stretching */
         border: rgb(0, 0, 0) .25vw solid;
         display: block;
-      }
-
-      .title-text{
+    }
+    .auth-title-div{
+        margin-top: -3vw;
+    }
+    .title-text{
         font-family: 'header';
         font-weight: 500;
-        font-size: 1.55vw;
+        font-size: 1.5vw;
         color: rgb(255, 255, 255);
         text-align: center;
         letter-spacing: .12vw;
         margin-bottom: 12%;
         padding: 0 .25vw 0 .25vw;
-      }
-      .author{
+    }
+    .author{
         font-family: 'header';
         font-weight: 500;
-        font-size: 1.16vw;
+        font-size: 1.15vw;
+        line-height: 1.25vw;
         color: aqua;
         text-align: center;
         letter-spacing: .10vw;
         padding-left: .25vw;
         padding-right: .25vw;
-      }
-      .frame{
-        padding: 30% 1.25vw .0vw 1.25vw;
+    }
+    .frame{
+        padding: 0% 1.25vw .0vw 1.25vw;
         width: 16vw;
-        height: 21.7vw;
-        display: block;
+        height: 27vw;
+        display: flex;
         justify-content: center;
         align-items: center;
         background-color: black;
@@ -75,7 +77,7 @@
         width: 100%;
         display: flex;
         justify-content: center;
-        letter-spacing: .17vw;
+        letter-spacing: .2vw;
         margin-top: 20%;
       }
      .right-arrow{
@@ -116,7 +118,7 @@
         border: .25vw gray solid;
         display: relative;
         z-index: 6;
-        background-color: aliceblue;
+        background-image: url('../assets/fonts/linen.jpg');
         filter: contrast(120%);
         background-size: 100%;
         padding-left: 2vw;
@@ -127,8 +129,8 @@
         display: flex;
       }
       .data-div{
-        width: 57%;
-        padding: 1.25vw 1vw 1vw 1vw;
+        width: 63%;
+        padding: 0vw 1vw 1vw 1vw;
       }
       .img-div{
         width: 21vw;
@@ -137,39 +139,37 @@
         display: block;
         overflow: hidden;
         position: relative;
-        margin-left: 2.75vw;
+        margin-left: 3vw;
       }
       .zine-title{ 
-        font-family: 'catalog';
-        font-size: 1.75vw;
+        font-family: 'manrope';
+        font-size: 1.65vw;
         width: 95%;
         text-align: center;
         letter-spacing: .08vw;
         font-weight: 800;
         color: black;
-        text-decoration: underline;
-        margin-bottom: 4%;
-        margin-top: 3%;
+        margin-bottom: 3.5%;
+        margin-top: 3.25%;
         padding-right: 0%;
-        padding-left: 2%;
-        
+        padding-left: 2.5%;
       }
       .metadata{
-        font-family: "catalog";
-        font-size: 1.25vw;
+        font-family: "manrope";
+        font-size: 1.2vw;
         width: 97%;
-        letter-spacing: .1vw;
+        letter-spacing: .05vw;
         font-weight:500;
         margin-left: 3%;
-        margin-top: 1vw;
-        margin-bottom: .7vw;
+        margin-bottom: .90vw;
+        color: rgb(65, 65, 65);
       }
       .data-cat{
-        font-family: 'catalog';
-        font-size: 1.25vw;
+        font-family: 'manrope';
+        font-size: 1.2vw;
         width: 100%;
-        letter-spacing: .09vw;
-        font-weight: 600;
+        letter-spacing: .05vw;
+        font-weight: 700;
         font-style: bold;
         color: rgb(0, 0, 0);
         margin-right: 1%;
@@ -200,64 +200,206 @@
 
 @media only screen and (min-width: 1900px){
    
-    .zine-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 6vw;
-        padding: 2vw;
-        padding-top: 5vw;
-        margin-left: 2%;
-      }
-      
-      .zine-item {
-        overflow: hidden;
-        position: relative;
-        cursor: pointer;
-      }
-      
-      .zine-item img {
-        width: 18vw;
-        height: 26vw;
-        object-fit: fill; /* Ensures the image covers the area without stretching */
-        border: rgb(0, 0, 0) .25vw solid;
-        display: block;
-      }
+  .top-div{
+        
+    background-attachment: fixed;
+    background-size: 100vw;
+ }
 
-      .title-text{
-        font-family: 'header';
-        font-weight: 500;
-        font-size: 1.28vw;
-        color: rgb(255, 255, 255);
-        text-align: center;
-        letter-spacing: .13vw;
-        margin-bottom: 10%;
-      }
-      .author{
-        font-family: 'header';
-        font-weight: 500;
-        font-size: 1.05vw;
-        color: aqua;
-        text-align: center;
-        letter-spacing: .15vw;
-      }
-      .frame{
-        padding: 45% 1vw .0vw 1vw;
-        width: 87%;
-        height: 100%;
-        display: block;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        position: absolute;
-        z-index: 2;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        opacity: 0;
-        transition: opacity 0.5s ease;
-      }
-      .zine-item:hover .frame {
-        opacity: .95;
-      }
+ .zine-grid {
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 3vw;
+     padding: 2vw;
+     padding-top: 5vw;
+     margin-left: 3%;
+   }
+   .zine-item {
+     overflow: hidden;
+     position: relative;
+     cursor: pointer;
+   }
+   
+   .zine-item img {
+     width: 18vw;
+     height: 26vw;
+     object-fit: fill; /* Ensures the image covers the area without stretching */
+     border: rgb(0, 0, 0) .25vw solid;
+     display: block;
+   }
+   .auth-title-div{
+    margin-top: -3vw;
+   }
+   .title-text{
+     font-family: 'header';
+     font-weight: 400;
+     font-size: 1.4vw;
+     line-height: 1.5vw;
+     color: rgb(255, 255, 255);
+     text-align: center;
+     letter-spacing: .12vw;
+     margin-bottom: 12%;
+     padding: 0 .25vw 0 .25vw;
+   }
+   .author{
+     font-family: 'header';
+     font-weight: 500;
+     font-size: 1.10vw;
+     line-height: 1.20vw;
+     color: aqua;
+     text-align: center;
+     letter-spacing: .12vw;
+     padding-left: .25vw;
+     padding-right: .25vw;
+   }
+   .frame{
+     padding: 0 1.25vw .0vw 1.25vw;
+     width: 16vw;
+     height: 27vw;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: black;
+     position: absolute;
+     z-index: 2;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     opacity: 0;
+     transition: opacity 0.65s ease;
+   }
+   .zine-item:hover .frame {
+     opacity: .95;
+   }
+   .view-zine{
+     font-family: 'header';
+     font-weight: 500;
+     font-size: .9vw;
+     color: white;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     letter-spacing: .17vw;
+     margin-top: 20%;
+   }
+  .right-arrow{
+     height: .2vw;
+  }
+  .meta-btn{
+     margin-top: 4%;
+     background-color: transparent;
+     border: none;
+     font-family: 'header';
+     font-weight: 500;
+     font-size: 1.15vw;
+     letter-spacing: .2vw;
+     color: rgb(0, 0, 0);
+     cursor: pointer;
+     transition: all .75s;
+     margin-bottom: 6%;
+  }
+  .meta-btn:hover{
+   letter-spacing: .35vw;
+   color: black
+  }
+  .overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.78);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     z-index: 5;
+     transition: opacity 1s ease, visibility 1s ease;
+   }
+   .overlay-frame{
+     height: 80%;
+     width: 75%;
+     border: .25vw gray solid;
+     display: relative;
+     z-index: 6;
+     background-image: url(../assets/fonts/linen.jpg);
+     background-size: cover;
+     padding-left: 2vw;
+     padding-right: 2vw;
+     padding-top: .25vw;
+   }
+   .col-data-div{
+     display: flex;
+   }
+   .data-div{
+     width: 63%;
+     padding: 1.25vw 1vw 1vw 1vw;
+   }
+   .img-div{
+     width: 19vw;
+     height: 32.5vw;
+     padding-top: 1vw;
+     display: block;
+     overflow: visible;
+     position: relative;
+     margin-left: 2.75vw;
+   }
+   .zine-title{ 
+     font-family: 'manrope';
+     font-size: 1.7vw;
+     width: 95%;
+     text-align: center;
+     letter-spacing: .05vw;
+     font-weight: 800;
+     color: black;
+     margin-bottom: 4%;
+     margin-top: 2.5%;
+     padding-right: 0%;
+     padding-left: 2%;
+     
+   }
+   .metadata{
+     font-family: "manrope";
+     font-size: 1.1vw;
+     width: 97%;
+     letter-spacing: .04vw;
+     font-weight: 500;
+     margin-left: 3%;
+     margin-top: 0vw;
+     margin-bottom: 1vw;
+     color: rgb(65, 65, 65);
+   }
+   .data-cat{
+     font-family: 'manrope';
+     font-size: 1.15vw;
+     width: 100%;
+     letter-spacing: .05vw;
+     font-weight: 700;
+     font-style: bold;
+     color: rgb(0, 0, 0);
+     margin-right: 1%;
+   }
+   .card-img{
+     width: 18vw;
+     height: 26vw;
+     object-fit: fill;
+     border: .3vw rgb(0, 0, 0) solid;
+     margin-bottom: 2%;
+   }
+   .card-btn{
+     background-color: transparent;
+     border: none;
+     font-family: 'header';
+     letter-spacing: .25vw;
+     font-size: 1.05vw;
+     font-weight: 600;
+     padding: .0vw 0vw .3vw 0vw;
+     cursor: pointer;
+     transition: all .75s;
+     color:rgb(65, 65, 65)
+   }
+   .card-btn:hover{
+     letter-spacing: .4vw;
+     color: black;
+   }
 }

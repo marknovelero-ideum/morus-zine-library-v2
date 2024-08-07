@@ -40,8 +40,10 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
                         <a href={zineData.pdf_link} target="_blank" rel="noopener noreferrer">
                             <img className="zine-img" src={zineData.image} alt={zineData.title}/>
                             <div className='frame'>
-                                <h2 className='title-text'>{zineData.Title}</h2>
-                                <h3 className='author'>{zineData.Creator}</h3>
+                                <div className='auth-title-div'>
+                                    <h2 className='title-text'>{zineData.Title}</h2>
+                                    <h3 className='author'>{zineData.Creator}</h3>
+                                </div>
                             </div>
                         </a>
                     </div> 
