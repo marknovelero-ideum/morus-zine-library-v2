@@ -30,11 +30,11 @@
         align-items: center;
         background-color: transparent;
         color: white;
-        padding: 1vw 3vw 0px 0px;
+        padding: .5vw 3vw 0px 0px;
         margin-top: 2.5%;
         margin-bottom: 4.25%;
         border-bottom: black .42vw solid;
-        width: 92.2%;
+        width: 93%;
     }
     .left h1 {
         margin: 0;
@@ -61,7 +61,7 @@
     .nav-link {
         text-decoration: none;
         font-family: 'header';
-        font-size: 1.4vw;
+        font-size: 1.5vw;
         letter-spacing: .25vw;
         font-weight: 500;
         color: rgb(0, 0, 0);
@@ -76,7 +76,7 @@
     .nav-link.current{
         text-decoration: none;
         font-family: 'header';
-        font-size: 1.4vw;
+        font-size: 1.5vw;
         letter-spacing: .25vw;
         font-weight: 500;
         color:  rgb(255, 255, 255);
@@ -94,21 +94,21 @@
     .main-title {
         font-family: 'stencil'; 
         color: #48eaff;
-        font-size: 4.75vw;
-        line-height: 4.25vw;
+        font-size: 4.5vw;
+        line-height: 4vw;
         font-weight: 500;
         margin-bottom: 0px;
         letter-spacing: .3vw;
         padding-top: 0px;
-        background-color: #000000;
+        background-color: transparent;
         padding: .75vw 2.25vw 0vw 2.25vw;
     }
     .subtitle{
         padding: 0px 0px 0px .98vw;
         margin: 0px;
         font-family: 'header';
-        font-size: 1.25vw;
-        letter-spacing: .45vw;
+        font-size: 1.15vw;
+        letter-spacing: .3vw;
         margin-left: 1.65vw;
         padding-bottom: .25vw;
     }
@@ -196,7 +196,7 @@
         margin-bottom: 0px;
         letter-spacing: .2vw;
         padding-top: 0px;
-        background-color: #000000;
+        background-color: transparent;
         padding: .9vw 2.25vw 0vw 2.25vw;
     }
     .subtitle{

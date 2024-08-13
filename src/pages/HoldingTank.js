@@ -1,11 +1,3 @@
-import React, { useState, useEffect } from 'react'
-import {motion, AnimatePresence} from 'framer-motion'
-import './collection.css'
-import Navbar from '../components/Navbar'
-import { useLocation } from 'react-router-dom';
-
-
-
 export default function Collection( { toCollection, toAbout, zineData, current, setCurrent}) {
 
     const [showOverlay, setShowOverlay] = useState(false);
@@ -30,11 +22,10 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
     }, [currentPage]);
   
   
-    
+    // Calculate the indices of the zines to display on the current page
     const filteredZines = selectedCategory === 'All'
       ? zineData
-      : zineData.filter(zine => zine.Subject === selectedCategory || zine.Subject_2 === selectedCategory);
-    // Calculate the indices of the zines to display on the current page  
+      : zineData.filter(zine => zine.Subject === selectedCategory);
     const indexOfLastZine = currentPage * zinesPerPage;
     const indexOfFirstZine = indexOfLastZine - zinesPerPage;
     const currentZines = filteredZines.slice(indexOfFirstZine, indexOfLastZine);
@@ -78,18 +69,18 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
             <option className='option' value="Bicycles">Bicycles</option>
             <option className='option' value="Climate Change">Climate Change</option>
             <option className='option' value="Community">Community</option>
-            <option className='option' value="How To and DIY">How To and DIY</option>
-            <option className='option' value="Environmentalism and Nature">Environmentalism</option>
+            <option className='option' value="DIY">DIY</option>
+            <option className='option' value="Environmentalism">Environmentalism</option>
             <option className='option' value="Feminism">Feminism</option>
             <option className='option' value="Gardening">Gardening</option>
             <option className='option' value="History">History</option>
             <option className='option' value="Housing">Housing</option>
             <option className='option' value="Labor">Labor</option>
-            <option className='option' value="Poetry">Poetry</option>
             <option className='option' value="Politics">Politics</option>
-            <option className='option' value="Prison">Prisons</option>
+            <option className='option' value="Prisons">Prisons</option>
             <option className='option' value="Race">Race</option>
             <option className='option' value="Squatting">Squatting</option>
+            <option className='option' value="Surveillance">Surveillance</option>
           </select>
         </div>
           <AnimatePresence>
@@ -102,11 +93,7 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
                       initial={{y: 800}}
                       animate={{y: 0}}
                       transition={{delay: .5, duration: 1.25}} >
-                          <motion.div
-                            initial={{opacity: 0}}
-                            animate={{opacity: 1}} 
-                            transition={{duration: 1}}
-                            className="zine-item">
+                          <div className="zine-item">
                               <a href={zineData.pdf_link} target="_blank" rel="noopener noreferrer">
                                   <img className="zine-img" src={zineData.image} alt={zineData.title}/>
                                   <div className='frame'>
@@ -116,7 +103,7 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
                                       </div>
                                   </div>
                               </a>
-                          </motion.div> 
+                          </div> 
                           <button onClick={() => openOverlay(zineData)} className='meta-btn'>View Metadata &#8594;</button> 
                       </motion.div>
                   ))}

@@ -29,8 +29,6 @@ export default function Home( {toAbout, toCollection,current, setCurrent}) {
 
   return (
     <main>
-      
-  
       {/* start of about code */}
       <motion.article 
         initial={{opacity: 0}}
