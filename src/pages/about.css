@@ -181,7 +181,6 @@
         letter-spacing: -.15vw;
         cursor: pointer;
     }
- 
     .deco-div-4{
         width: auto;
         height: .95vw; 
@@ -252,7 +251,7 @@
     .roots{
         writing-mode: vertical-rl;
         text-orientation: upright;
-        transform: translateY(17.12vw);
+        transform: translateY(16.9vw);
         font-family: 'manrope';
         font-size: 5.75vw;
         letter-spacing: -2.33vw;
@@ -293,15 +292,20 @@
     }
     .end-text{
         font-family: 'manrope';
-        font-size: 8.48vw;
+        font-size: 8.52vw;
         margin: 0;
         font-weight: 900;
         color: black;
         margin-right: 7%;
         letter-spacing: -.2vw;
-        bottom: .40vw;
+        bottom: .38vw;
         position: absolute;
         right: 7.8vw;
+        cursor: pointer;
+        transition: all .75s;
+    }
+    .end-text:hover{
+        letter-spacing: .2vw;
     }
     .point{
         height: 5.5vw;
@@ -622,7 +626,6 @@
         cursor: pointer;
     }
 }
-
 @media only screen and (min-width: 1900px){
     .about-top{
         width: 100vw;
@@ -931,6 +934,9 @@
         bottom: .47vw;
         position: absolute;
         right: 7.8vw;
+    }
+    .end-text:hover{
+        letter-spacing: .2vw;
     }
     .point{
         height: 5.5vw;

@@ -13,6 +13,7 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
     const [currentPage, setCurrentPage] = useState(1);
     const [selectedCategory, setSelectedCategory] = useState('All');
     const [isOpen, setIsOpen] = useState(false);
+    const [isGridVisible, setIsGridVisible] = useState(true)
     
     const zinesPerPage = 40;
     const location = useLocation();
@@ -61,7 +62,12 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
     // Handle category change
     const handleCategoryChange = (event) => {
       setSelectedCategory(event.target.value);
+      setIsGridVisible(false)
       setCurrentPage(1); // Reset to the first page when category changes
+      setTimeout(()=>{
+        setIsGridVisible(true)
+      }, 200)
+      
     };
   
     return (
@@ -99,14 +105,10 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
                   className="zine-grid">
                   {currentZines.map((zineData, index) => (
                       <motion.div 
-                      initial={{y: 800}}
-                      animate={{y: 0}}
+                      initial={{y: 800, opacity: 0}}
+                      animate={{y: 0, opacity: 1}}
                       transition={{delay: .5, duration: 1.25}} >
-                          <motion.div
-                            initial={{opacity: 0}}
-                            animate={{opacity: 1}} 
-                            transition={{duration: 1}}
-                            className="zine-item">
+                          <div className="zine-item">
                               <a href={zineData.pdf_link} target="_blank" rel="noopener noreferrer">
                                   <img className="zine-img" src={zineData.image} alt={zineData.title}/>
                                   <div className='frame'>
@@ -116,11 +118,12 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
                                       </div>
                                   </div>
                               </a>
-                          </motion.div> 
-                          <button onClick={() => openOverlay(zineData)} className='meta-btn'>View Metadata &#8594;</button> 
+                          </div>
+                          <button onClick={() => openOverlay(zineData)} className='meta-btn'>View Metadata &#8594;</button>
                       </motion.div>
                   ))}
               </motion.div>
+            
           </AnimatePresence>
           <AnimatePresence>
           {showOverlay && selectedZine && (
@@ -161,7 +164,7 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
           
         )}
         </AnimatePresence>
-              {/* Pagination Controls */}
+            {/* Pagination Controls */}
               <div className="pagination">
                   <div className="sub-pagination">
                   {Array.from({ length: totalPages }, (_, index) => (
@@ -171,7 +174,7 @@ export default function Collection( { toCollection, toAbout, zineData, current, 
                       </button>
                   ))}
                   </div>
-              </div>
+              </div>    
       </div>
     )
   }
